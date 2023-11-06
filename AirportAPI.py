@@ -22,9 +22,14 @@ def getAirport(iata):
         "city": data["city"],
         "country": data["country"],
         "website": data["website"],
-        "phone": data["phone"]
+        "phone": data["phone"],
         
     }
+
+
+    airports["flightOperators"].append({
+        "name": "Operator1",
+        "planes": 10
+    })
+
     return airports
-
-
